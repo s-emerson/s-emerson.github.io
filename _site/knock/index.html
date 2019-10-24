@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1"><!-- Begin Jekyll SEO tag v2.6.1 -->
+<title>Knock-Knock Joke Dispenser | funney joeks</title>
+<meta name="generator" content="Jekyll v4.0.0" />
+<meta property="og:title" content="Knock-Knock Joke Dispenser" />
+<meta name="author" content="Sam" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="a joke dispenser to showcase my html, css, and javascript skills" />
+<meta property="og:description" content="a joke dispenser to showcase my html, css, and javascript skills" />
+<link rel="canonical" href="https://s-emerson.github.io/myblog/knock/" />
+<!-- <link rel="canonical" href="http://localhost:4000/knock/" /> -->
+<script src="../assets/js/knock_script.js" async></script>
+<link rel="stylesheet" href="../assets/style.css" />
+<meta property="og:url" content="https://s-emerson.github.io/myblog/knock/"/>
+<!-- <meta property="og:url" content="http://localhost:4000/knock/"/> -->
+<meta property="og:site_name" content="funney joeks" />
+<script type="application/ld+json">
+{"description":"a joke dispenser to showcase my html, css, and javascript skills","@type":"WebPage","headline":"Knock-Knock Joke Dispenser","url":"https://s-emerson.github.io/myblog/knock/","author":{"@type":"Person","name":"Sam"},"@context":"https://schema.org"}</script>
+<!-- {"description":"a joke dispenser to showcase my html, css, and javascript skills","@type":"WebPage","headline":"Knock-Knock Joke Dispenser","url":"http://localhost:4000/knock/","author":{"@type":"Person","name":"Sam"},"@context":"https://schema.org"}</script> -->
+<!-- End Jekyll SEO tag -->
+<link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="https://s-emerson.github.io/myblog/feed.xml" title="funney joeks" />
+</head>
+<!-- <link rel="stylesheet" href="/assets/main.css"><link type="application/atom+xml" rel="alternate" href="http://localhost:4000/feed.xml" title="funney joeks" />
+</head> -->
+
+
+<body>
+<header class="site-header" role="banner">
+
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="/">funney joeks</a>
+  <nav class="site-nav">
+    <input type="checkbox" id="nav-trigger" class="nav-trigger" />
+    <label for="nav-trigger">
+      <span class="menu-icon">
+        <svg viewBox="0 0 18 15" width="18px" height="15px">
+          <path d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.032C17.335,0,18,0.665,18,1.484L18,1.484z M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.032C17.335,6.031,18,6.696,18,7.516L18,7.516z M18,13.516C18,14.335,17.335,15,16.516,15H1.484 C0.665,15,0,14.335,0,13.516l0,0c0-0.82,0.665-1.483,1.484-1.483h15.032C17.335,12.031,18,12.695,18,13.516L18,13.516z"/>
+        </svg>
+      </span>
+    </label>
+
+    <div class="trigger">
+      <a class="page-link" href="/about/">About</a>
+      <a class="page-link" href="/knock/">Knock-Knock Joke Dispenser</a>
+      <a class="page-link" href="/puns/">How about some Puns?</a>
+    </div>
+  </nav>
+  </div>
+</header>
+
+
+<main class="page-content" aria-label="Content">
+  <div class="wrapper">
+  <article class="post">
+
+    <header class="post-header">
+      <h1 class="post-title">Knock-Knock Joke Dispenser</h1>
+
+    </header>
+
+    <div class="post-content">
+        <p>Hello! Press the button to see who is at the door. Press the button again for the punchline, and then press it a third time for a new joke.</p>
+        <div class="display">
+        <p id="knock-knock-dispenser">Knock-knock.</p>
+      </div>
+      <br>
+      <div class="response">
+      <button id="whos-there"> Who's There?</button>
+      <!-- i want to have a nice big display that shows "Knock Knock" here. 
+        - underneath the display there should be a button that reads "Who's there?". 
+        - when clicked, the button runs a random number generator. 
+        - the generator is used to select a random joke from a list i will write out (and assign a number to). 
+        - the first half of the joke will replace the "knock knock" text, and the text on the button will change to "___ who?". 
+        - when clicked again, the punchline will appear in the display, and the text on the button will change to "Oh No". 
+        - clicking the button a third time will reset the display to "Knock Knock" and the button to "Who's there?", and next time it is pressed it will run the rng again for a new joke. -->
+        <!-- so, for the html file, i'm going to need to define the areas that will be styled by css and changed by js. i will need: 
+          - a top part for the intro/instructions, 
+          - a changeable display with default text that is replaced by functions called by js and cycles through 3 settings:  
+            1. a default initial state that is restored after every cycle, 
+            2. a randomized second state, 
+            3. and a third state that follows specifically from the chosen second state (so the second and third statements will always be bundled in the same called function)
+            : this third state means i need a general event listener for the first click, and then another nested one within each joke function for the second, and then either a nested or general final listener (not sure which- would prefer general, it would be much more compact and easy to read) to reset everything.
+          - and a clickable button that cycles through a "default" initial state, a "prompted" second state that is bundled with the display text, and a "default" final state.
+        each joke should have the same programming format with different flavor text. -->
+        </div>
+    </div>
+  </article>
+
+  </div>
+</main>
+
+
+<footer class="site-footer h-card">
+  <data class="u-url" href="/"></data>
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">funney joeks</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li class="p-name">funney joeks</li>
+          <li><a class="u-email" href="mailto:s.emerson@ufl.edu">s.emerson@ufl.edu</a>
+          </li></ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          <li><a href="https://github.com/s-emerson">
+            <svg class="svg-icon">
+            <use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> 
+            <span class="username">s-emerson</span>
+          </a></li></ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p>a joke dispenser to showcase my html, css, and javascript skills</p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+</body>
+
+</html>
