@@ -1,0 +1,63 @@
+/* Typography */
+
+.display{
+    font-size: 2em;
+    font-family: 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+#whos-there {
+    font-size: 2.3em;
+    font-family: fantasy, sans-serif;
+}
+
+.pun-header {
+    font-family: 'Abel', sans-serif;
+    color: darkslategrey;
+}
+
+.call-and-response-list dd {
+    font-family: 'Amatic SC', sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    margin-left: 22px;
+}
+
+.unprompted-list ul {
+    list-style-type: none;
+    margin-left: 4px;
+}
+
+
+/* Text Layout */
+
+#knock-knock-dispenser {
+    position: relative;
+    display: inline-block;
+    height: 220px;
+    width: 500px;
+    background-color: lightgray;
+    outline: solid 1rem;
+    padding: 1em 7px;
+    margin: 30px 15px;
+    text-align: center;
+}
+
+
+/* Button Layout */
+
+
+#whos-there {
+    color: darkred;
+    background-color: lightcoral;
+    padding: 15px 20px;
+    position: relative;
+    display: inline-block;
+    height: 150px;
+    width: 500px;
+    text-align: center;
+    margin: 0px 20px;
+}
+
+
+
